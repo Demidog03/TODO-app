@@ -1,4 +1,4 @@
 # HOW TO START THE PROJECT
 ## In root folder
-npm i
-npm start
+### 1. npm i
+### 2. npm start
