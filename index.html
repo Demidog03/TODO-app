@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO app</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./app.js" type="module" defer></script>
+</head>
+<body>
+    <div class="container is-widescreen box mt-5">
+        <div class="block">
+            <span class="title is-1">TODO List</span>
+        </div>
+        <div class="block level">
+            <input class="input is-info" type="text" id="todo-input" placeholder="Todo title">
+            <button class="button is-info is-outlined ml-4" id="todo-add-btn">Add</button>
+        </div>
+        <div class="block">
+            <span style="color: red;" id="error-text"></span>
+        </div>
+        <div class="block">
+            <button class="button is-link is-light" id="sort-by-name-btn">Sort by name</button>
+            <button class="button is-info is-light" id="sort-by-status-btn">Sort by status</button>
+        </div>
+        <div class="block" id="todo-list-wrapper">
+            <div class="notification is-link pt-3 pb-3 pl-4 pr-4">
+                <div class="level">
+                    <span class="title is-4 level-left mb-0">
+                        <button class="button is-primary is-rounded is-outlined p-3 mr-3"><i class="fa-solid fa-check"></i></button>
+                        Todo task 1
+                    </span>
+                    <button class="button is-danger is-light level-right"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
